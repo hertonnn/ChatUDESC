@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imag/pngwing.com.ico" type="image/x-icon">
+    <title>Chat_IA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script> 
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <div class="overlay-itens">
+            <a class = "itens" href="index.html"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="32.000000pt" height="32.000000pt" viewBox="0 0 32.000000 32.000000"
+                preserveAspectRatio="xMidYMid meet">
+               
+               <g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+               fill="#000000" stroke="none">
+               <path d="M142 283 c4 -21 33 -25 33 -3 0 8 -8 16 -18 18 -14 3 -18 -1 -15 -15z"/>
+               <path d="M115 232 c-22 -2 -45 -8 -52 -14 -17 -14 -18 -169 -1 -186 16 -16
+               180 -16 196 0 17 17 16 172 0 185 -15 12 -87 19 -143 15z m29 -59 c9 -22 -13
+               -45 -38 -41 -26 4 -33 38 -11 54 20 15 41 9 49 -13z m94 -16 c-4 -32 -54 -36
+               -63 -6 -5 16 -2 26 10 35 25 18 57 0 53 -29z m-68 -37 c0 -5 -4 -10 -10 -10
+               -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10 -10z m8 -37 c-10 -2 -26 -2
+               -35 0 -10 3 -2 5 17 5 19 0 27 -2 18 -5z m-13 -23 c3 -5 1 -10 -4 -10 -6 0
+               -11 5 -11 10 0 6 2 10 4 10 3 0 8 -4 11 -10z"/>
+               <path d="M106 173 c-11 -11 -6 -23 9 -23 8 0 15 4 15 9 0 13 -16 22 -24 14z"/>
+               <path d="M196 173 c-11 -11 -6 -23 9 -23 8 0 15 4 15 9 0 13 -16 22 -24 14z"/>
+               <path d="M14 146 c-8 -18 -8 -28 3 -42 12 -16 13 -13 13 24 0 23 -1 42 -2 42
+               -2 0 -8 -11 -14 -24z"/>
+               <path d="M291 130 c0 -25 3 -38 6 -30 3 8 9 17 13 20 3 3 0 16 -7 30 -12 24
+               -13 23 -12 -20z"/>
+               </g>
+               </svg><p>Conversas</p></a>
+            <a  class = "itens"href="#" ><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="32.000000pt" height="32.000000pt" viewBox="0 0 32.000000 32.000000"
+                preserveAspectRatio="xMidYMid meet">
+               
+               <g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+               fill="#000000" stroke="none">
+               <path d="M54 290 c-42 -17 -65 -71 -48 -114 8 -21 63 -21 70 -1 8 20 24 19 39
+               -2 11 -15 14 -12 24 20 16 46 28 47 47 2 11 -27 20 -35 39 -35 14 0 25 -4 25
+               -10 0 -5 -16 -10 -35 -10 -28 0 -38 5 -44 23 -9 21 -10 21 -21 -11 -13 -36
+               -17 -38 -39 -19 -10 8 -29 11 -50 8 l-34 -6 57 -52 c32 -29 66 -53 77 -53 10
+               0 48 28 85 63 54 51 66 69 71 102 9 74 -52 120 -122 91 -31 -13 -39 -13 -70 0
+               -39 16 -42 16 -71 4z"/>
+               </g>
+               </svg><p>Emoções</p></a>
+        </div>
+        <div class="overlay-content">
+            <a href="index.html">Apagar conversas</a>
+            <a href="#">Atualizações</a>
+            <a href="#">Sobre</a>
+            <div class="sobre">
+                <p>Criado por Herton Silveira.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+            <div class="chats">
+                <div id="inicial"class="chat-bot mensagens">
+                  
+                </div>
+            </div>
+            <div id="img" class="img">
+                <button onclick="topFunction()" id="myBtn" title="back">↶</button>
+            </div>
+    </div>
+
+    
+    <footer>
+        <div class="chat-input" id="mensagem">
+            <p>></p><input type="text" id = "input" >
+        </div>
+    </footer>
+    <script src = "./js/index.js" defer></script>
+</body>
+</html>
