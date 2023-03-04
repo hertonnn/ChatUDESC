@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Roboto:ital,wght@0,900;1,500&family=Ubuntu:wght@300&display=swap');
+*{
+    font-family: 'Open Sans';
+    
+
+}
+body{
+    padding-bottom: 60px;
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+
+}
+.container{
+    position:relative;
+    width: 100%;
+    height: 75%;
+    max-width: 75%;
+    flex: 70%;
+
+}
+.chats{
+    position: relative;
+    width: 80%;
+    height: 70%;
+    padding: 10%;
+    margin-left: 24%;
+}
+.mensagens{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 1px 0;
+}
+
+.mensagens p{
+    font-family: 'Chakra Petch', sans-serif;
+    color: rgb(2, 158, 23);
+    position: relative;
+    right: 0;
+    text-align: left;
+    max-width: 65%;
+    font-size: 1.5rem;
+}
+
+.chat-user{
+    justify-content: flex-end;
+}
+.chat-bot{
+    justify-content:left;
+}
+.chat-input{
+    position: fixed;
+    width: 60%;
+    height: 50px;
+    background: rgb(46, 45, 45);
+    pad:15px;
+    display: flex;
+    align-items: center;
+    margin-right: 30%;
+    border-radius: 5px;
+    margin-left: 25%;
+    
+
+}
+.chat-input input{
+    position: relative;
+    width: 100%;
+    pad:10px 20px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    background-color: transparent;
+    color: rgb(2, 158, 23);
+
+
+}
+.chat-input p{
+    font-size: 40px;
+    color: rgb(2, 158, 23);
+    font-family: 'Chakra Petch', sans-serif;
+    padding-left: 1.5%;
+
+}
+.img{
+    background-color: rgba(141, 139, 139, 0);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+
+}
+.img button{
+    background-color:rgb(46, 45, 45);
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 25px;
+    
+}
+
+/* Parte de menu */
+.overlay{
+    height: 100%;
+    width: 15%;
+    background-color: rgba(46, 45, 45);
+    /* deixa ele acima de qualquer coisa */
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;   
+}
+.overlay-content{
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(2, 158, 23);
+    display: block;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.overlay svg g{
+    fill:rgb(1, 88, 1);
+}
+.overlay svg {
+    width: 30px;
+}
+
+.overlay p{
+    font-family: 'Chakra Petch', sans-serif;
+    color: rgb(2, 158, 23);
+    margin-top: 20%;
+    font-size: 15px;
+}
+.overlay a:hover, .overlay a:focus{
+
+    color: rgb(0, 233, 31);
+
+}
+.overlay-itens{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+}
+.overlay-itens a p{
+    font-size: 0px;
+    margin-top: 10%;
+}
+.overlay-itens a:hover{
+    background-color: rgba(0, 0, 0, 0.171);
+    transition: 1s;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+}
+.overlay-itens a:hover p {
+
+    transition: 1s;
+    font-size: 15px;
+    margin-left: 15%;
+
+}
+footer{
+    position: fixed;
+    margin-top: 42%;
+}
+
+/* /* responsividade nav */
+
+/* @media screem and (max-height: 450px) {
+    .overlay a{
+        font-size: 20px;
+    }
+    .overlay .closebtn{
+        
+        font-size: 20px;
+        top:15px;
+        right: 35px;
+    }
+}
+  */
