@@ -7,7 +7,7 @@ digita(div, msg, temp)
 //conexao
 async function pegarMensagem(msg){
 
-  const resposta = await axios.post('http://127.0.0.1:8000/mensagem', {
+  const resposta = await axios.post('http://0.0.0.0:5000/mensagem', {
       mensagem: msg
   })  
 
